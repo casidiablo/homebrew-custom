@@ -4,6 +4,7 @@ class PopcornTime < Cask
 
   url "https://cdn.popcorntime.io/build/Popcorn-Time-#{version}-Mac.dmg"
   homepage 'http://popcorntime.io/'
+  license :gpl
 
-  link 'Popcorn-Time.app'
+  app 'Popcorn-Time.app'
 end
