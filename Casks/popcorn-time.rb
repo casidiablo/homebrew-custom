@@ -1,6 +1,6 @@
 class PopcornTime < Cask
-  version '0.3.5'
-  sha256 '3726f4ca44a1323d0bdcbf428730ce50ddfca02cbbd42fab28b7055a51040b6e'
+  version '0.3.5.2'
+  sha256 'ade06bff28118b83a69f6dcad2e7cabdc0a5d5445b5e12b1b65587e263dc7f74'
 
   url "https://cdn.popcorntime.io/build/Popcorn-Time-#{version}-Mac.dmg"
   homepage 'http://popcorntime.io/'
