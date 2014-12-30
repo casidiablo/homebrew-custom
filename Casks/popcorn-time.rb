@@ -1,10 +1,12 @@
 cask :v1 => 'popcorn-time' do
-  version '0.3.5.2'
-  sha256 'ade06bff28118b83a69f6dcad2e7cabdc0a5d5445b5e12b1b65587e263dc7f74'
+  version '0.3.6'
+  sha256 '48419eaa34ab31ca071e010ff49c065ba23ad06bd8f1b50349308980e937dfeb'
 
-  url "https://cdn.popcorntime.io/build/Popcorn-Time-#{version}-Mac.dmg"
+  url "http://popcorn.obsidian.goender.net/build/Popcorn-Time-#{version}-Mac.dmg"
   homepage 'http://popcorntime.io/'
   license :gpl
 
   app 'Popcorn-Time.app'
+
+  zap :delete => '~/Library/Application Support/Popcorn-Time'
 end
