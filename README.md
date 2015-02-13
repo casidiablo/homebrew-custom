@@ -1,4 +1,4 @@
 To tap run: 
-  brew tap casidiablo/homebrew-custom
+  brew tap casidiablo/custom
 
 Then install as normal
