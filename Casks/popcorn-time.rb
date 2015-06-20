@@ -4,7 +4,7 @@ cask :v1 => 'popcorn-time' do
 
   url "https://get.popcorntime.io/build/Popcorn-Time-#{version.gsub('-', '.')}-Mac.dmg", :user_agent => :fake
   appcast 'https://popcorntime.io/update.json',
-    :sha256 => 'a9bd0f4938c7bd1a8a3e42efa32eafa9a97f2b9100283b7a15a4fc5c6213cbc7',
+    :sha256 => '3354d21ad453807bd663a20861dc3da36f3d2860929d30fc30ee15f87e8622af',
     :format => :unknown
   name 'Popcorn Time'
   homepage 'http://popcorntime.io/'
