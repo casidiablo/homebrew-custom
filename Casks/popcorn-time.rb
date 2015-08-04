@@ -1,11 +1,8 @@
 cask :v1 => 'popcorn-time' do
-  version '0.3.7-2'
-  sha256 'a35b5402c84b69bf54c86c278c62d93d933506966c8c819e56f97877e4d2cfb7'
+  version '0.3.8-2'
+  sha256 '16ae386ef16a16359068ec62d9a8afc72765a94e83398cdbe4bc7b86deb753be'
 
-  url "https://cdn.popcorntime.io/build/Popcorn-Time-#{version.gsub('-', '.')}-Mac.dmg", :user_agent => :fake
-  appcast 'https://popcorntime.io/update.json',
-    :sha256 => '3354d21ad453807bd663a20861dc3da36f3d2860929d30fc30ee15f87e8622af',
-    :format => :unknown
+  url "http://188.166.124.227/build/Popcorn-Time-#{version}-Mac.dmg", :user_agent => :fake
   name 'Popcorn Time'
   homepage 'http://popcorntime.io/'
   license :gpl
@@ -13,6 +10,11 @@ cask :v1 => 'popcorn-time' do
   app 'Popcorn-Time.app'
 
   uninstall :quit => ['com.intel.nw', 'com.intel.nw.helper'],
-    :delete => '/$TMPDIR$/Popcorn-Time'
-  zap :delete => '~/Library/Application Support/Popcorn-Time'
+            :delete => '/$TMPDIR$/Popcorn-Time'
+
+  zap :delete => [
+                  '~/Library/Application Support/Popcorn-Time',
+                  '~/Library/Preferences/io.nwjs.nw.plist',
+                  '~/Library/Preferences/io.nwjs.nw.helper.plist'
+                 ]
 end
