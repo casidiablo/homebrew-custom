@@ -3,9 +3,6 @@ cask :v1 => 'popcorn-time' do
   sha256 '16ae386ef16a16359068ec62d9a8afc72765a94e83398cdbe4bc7b86deb753be'
 
   url "http://188.166.124.227/build/Popcorn-Time-#{version}-Mac.dmg", :user_agent => :fake
-  appcast 'https://popcorntime.io/update.json',
-    :sha256 => '3354d21ad453807bd663a20861dc3da36f3d2860929d30fc30ee15f87e8622af',
-    :format => :unknown
   name 'Popcorn Time'
   homepage 'http://popcorntime.io/'
   license :gpl
