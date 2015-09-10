@@ -1,5 +1,5 @@
 cask :v1 => 'popcorn-time' do
-  version '0.3.7-2'
+  version '0.3.8-5'
   sha256 'a35b5402c84b69bf54c86c278c62d93d933506966c8c819e56f97877e4d2cfb7'
 
   url "https://cdn.popcorntime.io/build/Popcorn-Time-#{version.gsub('-', '.')}-Mac.dmg", :user_agent => :fake
